@@ -1,56 +1,51 @@
 <svg width="600" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-        <style>
-            .tri {
-                stroke-dasharray: 1650;
-                stroke-dashoffset: 1650;
-                animation: dash_tri 5s linear forwards infinite;
-            }
-
-            .cir {
-                stroke-dasharray: 1000;
-                stroke-dashoffset: 1000;
-                animation: dash_cir 5s linear forwards infinite;
-            }
-
-            .cross {
-                stroke-dasharray: 480;
-                stroke-dashoffset: 480;
-                animation: dash_cross 5s linear forwards infinite;
-            }
-
-            @keyframes dash_tri {
-                to {
-                    stroke-dashoffset: -1650;
-                }
-            }
-
-            @keyframes dash_cir {
-                to {
-                    stroke-dashoffset: -1000;
-                }
-            }
-
-            @keyframes dash_cross {
-                to {
-                    stroke-dashoffset: -480;
-                }
-            }
-        </style>
-        <radialGradient id="GradientReflect" cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
-            spreadMethod="reflect">
-            <stop offset="0%" stop-color="red" />
-            <stop offset="100%" stop-color="blue" />
-        </radialGradient>
-    </defs>
-    <rect x="0" y="0" rx="15" ry="15" width="600" height="550" fill="url(#GradientReflect)" />
-    <g fill="none" stroke="#FFF" stroke-width="3" ">
-<circle class=" cir" cx="300" cy="354.4" r="158.8" transform="rotate(90 300 354.4)" />
+<defs>
+    <style>
+        .tri {
+        stroke-dasharray: 1650;
+        stroke-dashoffset: 1650;
+        animation: dash_tri 5s linear forwards infinite;
+        }
+        .cir {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash_cir 5s linear forwards infinite;
+        }
+        .cross {
+        stroke-dasharray: 480;
+        stroke-dashoffset: 480;
+        animation: dash_cross 5s linear forwards infinite;
+        }
+        @keyframes dash_tri {
+        to {
+        stroke-dashoffset: -1650;
+        }
+        }
+        @keyframes dash_cir {
+        to {
+        stroke-dashoffset: -1000;
+        }
+        }
+        @keyframes dash_cross {
+        to {
+        stroke-dashoffset: -480;
+        }
+        }
+    </style>
+    <radialGradient id="GradientReflect" cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75"
+        spreadMethod="reflect">
+        <stop offset="0%" stop-color="red" />
+        <stop offset="100%" stop-color="blue" />
+    </radialGradient>
+</defs>
+<rect x="0" y="0" rx="15" ry="15" width="600" height="550" fill="url(#GradientReflect)" />
+<g fill="none" stroke="#FFF" stroke-width="3">
+    <circle class="cir" cx="300" cy="354.4" r="158.8" transform="rotate(90 300 354.4)" />
     <path class="tri" d="m25 513.2h550l-275-476.3z" />
     <path class="cross" d="m25 513.2 412.5-238.2" />
     <path class="cross" d="m575 513.2-412.5-238.2" />
     <path class="cross" d="m300 36.9v476.3" />
-    </g>
+</g>
 
-    <style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+    <style xmlns=" http:// www.w3.org/ 1999/ xhtml" type=" text/ css"></style>
 </svg>
